@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,111 +8,112 @@
 
     <style>
         * {
-  box-sizing: border-box;
-}
+            box-sizing: border-box;
+        }
 
-        body{
-            margin:0;
-            padding:0;
-        background-image: url("newbackground.133ee7ec.png");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-    background-size:100% auto;
-    font-family:Arial, Helvetica, sans-serif;
-}
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url("newbackground.133ee7ec.png");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% auto;
+            font-family: Arial, Helvetica, sans-serif;
+        }
 
-#background{
-    background-color: rgb(0,0,0,0.5);
-    width:100vw;
-    min-height:100vh;
-    backdrop-filter: blur(5px);
-    position:relative;
-    
-}
+        #background {
+            background-color: rgb(0, 0, 0, 0.5);
+            width: 100vw;
+            min-height: 100vh;
+            backdrop-filter: blur(5px);
+            position: relative;
 
-#navigation{
-    background:rgb(255, 237, 37);
-    text-align:center;
-    
-    padding:20px;
-    
+        }
 
-}
+        #navigation {
+            background: rgb(255, 237, 37);
+            text-align: center;
 
-#quote{
-    text-align:center;
-    background-color:rgb(255, 237, 37,0.5);
-    color:yellow;
-    text-shadow:0px 0px 5px black;
-    font-size:2rem;
-    width:fit-content;
-    margin-left:auto;
-    margin-right:auto;
-    border-radius:20px;
-    padding:10px;
-    margin-top:50px;   
-}
+            padding: 20px;
 
-#button{
-    background-color:rgb(255, 237, 37);
-    color:white;
-    font-size:2rem;
-    width:250px;
-    margin-left:auto;
-    margin-right:auto;
-    margin-top:50px;
-    border-radius:20px;
-    padding-left:10px;
-    padding-right:10px;
-    text-align: center;
-}
 
-#button:hover {
-  transform: scale(1.1);
-  cursor: pointer; 
-}
+        }
 
-#movie_container{
-    text-align: center;
-    margin-top:50px;
-    position:relative;
-}
+        #quote {
+            text-align: center;
+            background-color: rgb(255, 237, 37, 0.5);
+            color: yellow;
+            text-shadow: 0px 0px 5px black;
+            font-size: 2rem;
+            width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 20px;
+            padding: 10px;
+            margin-top: 50px;
+        }
 
-#video{
-    margin-left:auto;
-    margin-right:auto;
-    visibility:hidden;
-}
+        #button {
+            background-color: rgb(255, 237, 37);
+            color: white;
+            font-size: 2rem;
+            width: 250px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 50px;
+            border-radius: 20px;
+            padding-left: 10px;
+            padding-right: 10px;
+            text-align: center;
+        }
 
-#waicorder_info{
-    z-index:2;
-    position:absolute;
-    top:0;
-    left:50%;
-    background-color:rgb(255, 237, 37,0.5);
-    color:white;
-    width:50%;
-    min-height:100%;
-    transform: translate(-50%,0);
-    font-size:1.5rem;
-    padding:20px;
-    visibility: hidden;
-}
+        #button:hover {
+            transform: scale(1.1);
+            cursor: pointer;
+        }
 
-#news{
-    color:yellow;
-    text-align: center;
-    width:50%;
-    margin-left:auto;
-    margin-right:auto;
-    margin-top:50px;
-}
-#news p{
-    color:white;
-}
+        #movie_container {
+            text-align: center;
+            margin-top: 50px;
+            position: relative;
+        }
 
+        #video {
+            margin-left: auto;
+            margin-right: auto;
+            visibility: hidden;
+        }
+
+        #waicorder_info {
+            z-index: 2;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            background-color: rgb(255, 237, 37, 0.5);
+            color: white;
+            width: 50%;
+            min-height: 100%;
+            transform: translate(-50%, 0);
+            font-size: 1.5rem;
+            padding: 20px;
+            visibility: hidden;
+        }
+
+        #news {
+            color: yellow;
+            text-align: center;
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 50px;
+        }
+
+        #news p {
+            color: white;
+        }
     </style>
 </head>
+
 <body>
     <div id="background">
         <div id="navigation">
@@ -120,77 +122,117 @@
         <div id="quote">
             <p>There Shall Be a Future Where Everyone<br>
                 <br>
-                Equally Accesses Safe Drinking-Water</p>
+                Equally Accesses Safe Drinking-Water
+            </p>
         </div>
         <div id="button" onclick="playmovie()">
             Squeeze Me
         </div>
-        
+
         <div id="movie_container">
-            <video id="video" width="50%">
+            <video id="video" width="50%" playsinline>
                 <source src="waicorderRenderTest.webm" type="video/webm">
-               
-              Your browser does not support the video tag.
-              </video> 
-              <div id="waicorder_info">
+
+                Your browser does not support the video tag.
+            </video>
+            <div id="waicorder_info">
                 <p>The Waicorder
 
-Wāi Ora. Tāngata Ora
+                    Wāi Ora. Tāngata Ora
 
-Water Testing in Seconds
+                    Water Testing in Seconds
 
-    E. coli
+                    E. coli
 
-    Campylobacter
+                    Campylobacter
 
-    Cryptosporidium
+                    Cryptosporidium
 
-    Salmonella
+                    Salmonella
 
-    Giardia
+                    Giardia
 
-    Nitrates
+                    Nitrates
 
-    Phosphates
+                    Phosphates
 
-    Hormones
+                    Hormones
 
-    Microplastics
+                    Microplastics
 
-    Cyanobacteria
+                    Cyanobacteria
 
-Taking actions against waterborne pathogens instantly is critical.
-It means more than freedom and independence;
-it will be the next step for all people on earth.
-This generation and the next generation.
-This planet and others to come.
-It will be the fundamental step for unity and peace.
-That's why we develop the Waicorder.
+                    Taking actions against waterborne pathogens instantly is critical.
+                    It means more than freedom and independence;
+                    it will be the next step for all people on earth.
+                    This generation and the next generation.
+                    This planet and others to come.
+                    It will be the fundamental step for unity and peace.
+                    That's why we develop the Waicorder.
 
-Get in touch if you want to help, join or know more:
-</p>
-              </div>
+                    Get in touch if you want to help, join or know more:
+                </p>
+            </div>
         </div>
-    
+
         <div id="news">
             <h1>News</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit incidunt iure suscipit dolor corrupti fugiat quis voluptas, dolorem ut est dicta omnis sapiente, hic veniam fuga repellendus iste consequuntur, alias deserunt blanditiis tempore in. Cumque, porro veritatis aut laudantium incidunt recusandae eos, suscipit veniam soluta molestias dignissimos cum, eum nihil odio explicabo autem illo quidem? Voluptatum rerum iure, quis enim provident facere atque esse doloremque modi quidem, maxime iste aperiam omnis ea necessitatibus et. Vero porro tempore ipsum corporis! Obcaecati, dolorum explicabo debitis asperiores hic commodi distinctio reprehenderit iure perspiciatis aliquid, deleniti illo ad nulla delectus ipsam libero dicta harum voluptate. Reprehenderit eos ipsum consectetur est dolores? Architecto sunt laboriosam perspiciatis qui, optio officia, rerum dolor odit corrupti eius exercitationem nisi nulla, ex dignissimos? Eius repellendus tenetur voluptates eveniet architecto doloribus nostrum, veritatis at delectus blanditiis earum. Doloribus in voluptas iste voluptatum laboriosam voluptates similique, ducimus veritatis, consectetur cumque natus ullam nihil optio accusamus suscipit quaerat praesentium velit totam cum quasi. Possimus provident fuga, dolores aut expedita, asperiores enim dolorem dolore facere dicta excepturi maiores quasi totam eos consectetur suscipit hic optio blanditiis vel. Impedit ducimus, aliquid explicabo labore rem reiciendis ab consequatur ea animi quis deserunt, eligendi ex quod. Illum laboriosam incidunt numquam tempora consectetur impedit rem accusamus dolor quas. Hic aliquam odit impedit blanditiis minus, nostrum eum placeat dolores? Officiis veniam cumque voluptates dolorum, repellendus fuga! Praesentium eius ut beatae corporis minus est deserunt eligendi incidunt mollitia facilis totam veniam consequatur, molestias repellendus similique voluptatum ducimus ullam amet at repellat labore quaerat? Itaque autem aliquam at ipsum corrupti repellendus facilis consectetur doloribus reiciendis. Iusto non quia maxime iure cum iste expedita consectetur reiciendis magnam officiis, nesciunt natus velit incidunt in et! Earum quasi minima ullam iste accusamus deserunt reprehenderit, aliquam nisi, sapiente rerum molestiae veritatis ipsa sunt. Labore at voluptate excepturi blanditiis voluptatum. Vel totam, quae hic eum culpa sunt. Ipsam ullam atque ducimus, temporibus perferendis voluptatum accusamus reprehenderit ut quae eaque delectus aliquam veniam dignissimos possimus molestias corrupti odio accusantium iure harum velit quo! Doloribus quasi dolor eaque doloremque pariatur necessitatibus culpa quidem modi exercitationem impedit voluptatibus, dolore ipsum voluptate vitae nemo mollitia accusamus quod sapiente tempora delectus. Est suscipit explicabo magni, aut magnam inventore alias voluptate atque quos laborum consectetur necessitatibus in. Veniam nostrum laborum dolorem, architecto corporis vitae delectus quas quo voluptatum magnam quos nihil! Repellat, reprehenderit culpa asperiores blanditiis dolorem laborum ipsum velit nemo, repudiandae ratione voluptate magnam ullam corrupti doloremque totam molestias consequuntur quidem? Facilis rerum aut beatae similique ducimus illo ex repudiandae ratione voluptate sequi illum, dolores omnis, sed error commodi quaerat. Deleniti voluptates labore, et eius vitae neque, dolore, id facere vel dolorum voluptatum consectetur iste. Sapiente harum quisquam illum qui doloremque accusantium saepe at nihil amet cum ipsum, eum doloribus facilis, magnam tempore illo ducimus optio nemo ullam modi quaerat et! Voluptatem eveniet odit illo facilis, maxime sit doloribus molestiae earum maiores officia eum quam labore velit fugit incidunt rem consequatur ipsum in fuga veritatis quae! Laboriosam cupiditate sequi id.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit incidunt iure suscipit dolor corrupti
+                fugiat quis voluptas, dolorem ut est dicta omnis sapiente, hic veniam fuga repellendus iste
+                consequuntur, alias deserunt blanditiis tempore in. Cumque, porro veritatis aut laudantium incidunt
+                recusandae eos, suscipit veniam soluta molestias dignissimos cum, eum nihil odio explicabo autem illo
+                quidem? Voluptatum rerum iure, quis enim provident facere atque esse doloremque modi quidem, maxime iste
+                aperiam omnis ea necessitatibus et. Vero porro tempore ipsum corporis! Obcaecati, dolorum explicabo
+                debitis asperiores hic commodi distinctio reprehenderit iure perspiciatis aliquid, deleniti illo ad
+                nulla delectus ipsam libero dicta harum voluptate. Reprehenderit eos ipsum consectetur est dolores?
+                Architecto sunt laboriosam perspiciatis qui, optio officia, rerum dolor odit corrupti eius
+                exercitationem nisi nulla, ex dignissimos? Eius repellendus tenetur voluptates eveniet architecto
+                doloribus nostrum, veritatis at delectus blanditiis earum. Doloribus in voluptas iste voluptatum
+                laboriosam voluptates similique, ducimus veritatis, consectetur cumque natus ullam nihil optio accusamus
+                suscipit quaerat praesentium velit totam cum quasi. Possimus provident fuga, dolores aut expedita,
+                asperiores enim dolorem dolore facere dicta excepturi maiores quasi totam eos consectetur suscipit hic
+                optio blanditiis vel. Impedit ducimus, aliquid explicabo labore rem reiciendis ab consequatur ea animi
+                quis deserunt, eligendi ex quod. Illum laboriosam incidunt numquam tempora consectetur impedit rem
+                accusamus dolor quas. Hic aliquam odit impedit blanditiis minus, nostrum eum placeat dolores? Officiis
+                veniam cumque voluptates dolorum, repellendus fuga! Praesentium eius ut beatae corporis minus est
+                deserunt eligendi incidunt mollitia facilis totam veniam consequatur, molestias repellendus similique
+                voluptatum ducimus ullam amet at repellat labore quaerat? Itaque autem aliquam at ipsum corrupti
+                repellendus facilis consectetur doloribus reiciendis. Iusto non quia maxime iure cum iste expedita
+                consectetur reiciendis magnam officiis, nesciunt natus velit incidunt in et! Earum quasi minima ullam
+                iste accusamus deserunt reprehenderit, aliquam nisi, sapiente rerum molestiae veritatis ipsa sunt.
+                Labore at voluptate excepturi blanditiis voluptatum. Vel totam, quae hic eum culpa sunt. Ipsam ullam
+                atque ducimus, temporibus perferendis voluptatum accusamus reprehenderit ut quae eaque delectus aliquam
+                veniam dignissimos possimus molestias corrupti odio accusantium iure harum velit quo! Doloribus quasi
+                dolor eaque doloremque pariatur necessitatibus culpa quidem modi exercitationem impedit voluptatibus,
+                dolore ipsum voluptate vitae nemo mollitia accusamus quod sapiente tempora delectus. Est suscipit
+                explicabo magni, aut magnam inventore alias voluptate atque quos laborum consectetur necessitatibus in.
+                Veniam nostrum laborum dolorem, architecto corporis vitae delectus quas quo voluptatum magnam quos
+                nihil! Repellat, reprehenderit culpa asperiores blanditiis dolorem laborum ipsum velit nemo, repudiandae
+                ratione voluptate magnam ullam corrupti doloremque totam molestias consequuntur quidem? Facilis rerum
+                aut beatae similique ducimus illo ex repudiandae ratione voluptate sequi illum, dolores omnis, sed error
+                commodi quaerat. Deleniti voluptates labore, et eius vitae neque, dolore, id facere vel dolorum
+                voluptatum consectetur iste. Sapiente harum quisquam illum qui doloremque accusantium saepe at nihil
+                amet cum ipsum, eum doloribus facilis, magnam tempore illo ducimus optio nemo ullam modi quaerat et!
+                Voluptatem eveniet odit illo facilis, maxime sit doloribus molestiae earum maiores officia eum quam
+                labore velit fugit incidunt rem consequatur ipsum in fuga veritatis quae! Laboriosam cupiditate sequi
+                id.</p>
         </div>
     </div>
-    
+
     <script>
-        function playmovie(){
+        function playmovie() {
             console.log('button clicked');
             video = document.getElementById('video');
-            video.scrollIntoView({ behavior: "smooth"});
-            setTimeout(function(){
-            video.style.visibility='visible';
-            video.play();
-            setTimeout(function(){
-                document.getElementById('waicorder_info').style.visibility='visible';
-            },5000);
-        },1000)
+            video.scrollIntoView({ behavior: "smooth" });
+            setTimeout(function () {
+                video.style.visibility = 'visible';
+                video.play();
+                setTimeout(function () {
+                    document.getElementById('waicorder_info').style.visibility = 'visible';
+                }, 5000);
+            }, 1000)
         }
     </script>
 </body>
+
 </html>
