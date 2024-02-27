@@ -80,6 +80,7 @@
 
         #video {
             width: 50%;
+            margin-top:50px;
             margin-left: auto;
             margin-right: auto;
             visibility: hidden;
@@ -242,8 +243,11 @@
     <script>
         function playmovie() {
             console.log('button clicked');
+            movie_container = document.getElementById('movie_container');
+            movie_container.scrollIntoView({ behavior: "smooth" });
+        
             video = document.getElementById('video');
-            video.scrollIntoView({ behavior: "smooth" });
+            
             setTimeout(function () {
                 video.style.visibility = 'visible';
                 video.play();
